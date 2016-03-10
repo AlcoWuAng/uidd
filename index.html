@@ -1,10 +1,32 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Hello</title>
-	<link href="index.css" rel="stylesheet">
+	<title>WESTEREN MARKET</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <script src="map.js"></script>
 </head>
+
 <body>
-	<h1>Hello!</h1>
+<header class="header">
+    <div class="row">
+    	<a href="#"><img class="home-btn" src="img/up.png">
+	    </a>
+	    <div class="col">
+	      <h1 class="title">WESTERN MARKET</h1>
+	      <p>Find stories around you.</p>
+	    </div>
+       	<img class="search-btn" src="img/up.png">
+	</div>
+</header>
+ 
+<div id="map">
+	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>
+    <script src="map.js"></script>
+	<img class="here-btn" src="img/here.png" />
+</div>
+
 </body>
 </html>

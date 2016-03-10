@@ -1,3 +1,48 @@
-h1{
-	color:gray;
+header {
+ 	padding: 5px 0;
+}
+header .row{
+	display: flex;
+	align-items: center;
+}
+header .col{
+	margin: 30px;
+}
+header h1 {
+	font-weight: 700;
+	font-size: 24px;
+	color:brown;
+	font-family:'Montserrat';
+	margin: 0px;
+}
+header p {
+	padding: 0 20px;
+	margin: 0;
+	font-size: 12px;
+	font-family:'Montserrat';
+}
+html,body{
+	margin: 0px;
+	position: relative;
+}
+#map{
+    width: 400px;
+    height: 500px;
+    background-color: #CCC;
+
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  
+}
+
+.here-btn{
+	/* float:right; */
+	max-height: 35px;
+	/* margin-bottom: 40px; */
+    /* margin-right: 40px; */
+	position: fixed;
+	left:340px;
+	top:550px;
 }
