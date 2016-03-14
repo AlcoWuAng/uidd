@@ -107,7 +107,6 @@ html,body,#map{
 }
 .info p{
     color:white;
-    font-size:15px;
 }
 .para-btn {
     position: relative;
@@ -116,3 +115,6 @@ html,body,#map{
     margin-left:-23.5px;
 }
 
+p{
+    font-size:15px;
+}
