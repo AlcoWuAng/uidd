@@ -2,7 +2,7 @@ header {
  	width: 400px;
  	height: 100px;
  	position: fixed;
- 	z-index: 10;
+ 	z-index: 500;
  	background-color:white;
 }
 header .row{
@@ -56,47 +56,49 @@ html,body,#map{
 	margin: 0 ;
     width: 400px;
 	height:700px;
-    
-	/*overflow: hidden;*/
+	overflow: hidden;
     font-family:"Microsoft JhengHei";   
 }
 #map{
     margin: 0 ;
-    position:absolute;
+    position:relative;
     width: 400px;
 	height:600px;
     top:100px;
 }
-
-
-.pin-btn{
+.here-btn{
     position:absolute;
-    top: 300px;
-    left: 150px;
-    height: 30px;
+    top:610px;
+    left:300px;
+    width:50px;
+    z-index:10;
 }
 
 
 /*intro_1*/
-.info, .info2{
+.info{
+    
     height:600px;
     width: 400px;
-    position:absolute;
-    top:100px;
+    position:absolute;top:100px;
+    display:none;    
+    z-index:50;
+    background:rgba(0, 0, 0, 0.85);
 }
-.info{
-    background-color:rgba(0, 0, 0, 0.7);
-}
+
 .info2{
-    background-color:#F0F0F0;
+    height:550px;
+    width: 400px;
+    position:absolute;top:700px;
+    z-index:200;
+    background-color:#F0F0F0;    
 }
-.infoimg{
+.infoimg,.infoimg2{
     width: inherit;
-    z-index:2;
 }
 .para{
-    width:320px;
-    padding:40px;    
+    width:330px;
+    padding:35px;    
     height:250px;
     margin:0;
 }
@@ -108,13 +110,31 @@ html,body,#map{
 .info p{
     color:white;
 }
-.para-btn {
-    position: relative;
+#more-btn {
+    position: absolute;
     left:50%;
-    bottom:25px;
+    bottom:28px;
     margin-left:-23.5px;
 }
 
 p{
     font-size:15px;
+}
+
+.blankr{
+    background-color: white;
+    z-index: 1000;
+    position: absolute;
+    left: 400px;
+    top:0;
+    width: 100%;
+    height: 100%;
+}
+.blankd{
+    background-color: white;
+    z-index: 1000;
+    position: absolute;
+    top: 700px;
+    width: 100%;
+    height: 100%;
 }

@@ -4,8 +4,11 @@
 	<title>西市場</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="index.css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+<!--    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>-->
+    <script src="jquery-2.2.2.js"></script>   
     <script src="map.js"></script>
+    <script src="info.js"></script>
+    
 </head>
 
 <body>
@@ -24,13 +27,40 @@
         </div>
     </header>
  
-<div id="map">
-	<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>
-	<img class="here-btn" src="img/here.png" />
-   
-</div>
-    <a href="intro1.html"><img class="pin-btn" src="img/pin.png" /></a>
+    <div id="map">
+	    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+            async defer></script>	     
+    </div>
+
+    <img class="here-btn" src="img/here.png" />  
+    
+    <div class="info">
+        <img class="infoimg" src="img/intro1.png" >
+        <div class="para">
+            <h2>西門公有零售市場</h2>
+            <p>西門市場即為台南著名的大菜市，在台南具有歷史悠久的地位，傳統的蔡市裡頭隱藏著許多美食，是許多饕客朝聖的地方。除此之外，該市集以布料及輔料為主，是早期台灣的三大布市之一。</p>
+            <p>
+                攤販數：128個<br>
+                主要販售：布料、輔料為其主要販售商品，尚有果菜、魚蝦、飲食及雜貨等商品。
+            </p>
+        </div>
+        <img id="more-btn" src="img/down.png">
+    </div>
+
+ 
+    <div class="info2">
+        <img class="infoimg2" src="img/intro2.png">
+        <div class="para">
+            <p>西門市場興建於日明治三十八年(西元1905年)，完工不久即毀於颱風，日本政府遂於原地重建，在大正九年(西元1920年)完成，占地3871坪，是當時全台灣最大的公有市場，俗稱「大菜市」，從蔬果批發販賣，再演變到布料市集開創60~80年代的成衣全盛時期，目前仍然是以布料、輔料為主的商場，曾經號稱為台灣的三大布市(台北迪化街、彰化小西街、台南大菜市)。</p>
+        </div>
+    </div>
+
+    <div class="blankr">        
+    </div>
+    <div class="blankd">        
+    </div>
 
 </body>
+
+
 </html>
